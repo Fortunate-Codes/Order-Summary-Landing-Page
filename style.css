@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-size: contain;
+    overflow: hidden;
+}
+main{
+    width: 60.8vh;
+    height: 78vh;
+    border: 1px solid hsl(225, 100%, 98%);
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 15px;
+    margin: 80px auto;
+}
+
+.img-container img{
+    display: flex;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 20px;
+    width: 60.8vh;
+    position: relative;
+    top: 0;
+    right: 1px;
+}
+.content-container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    color: hsl(223, 47%, 23%);
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin: 10px auto;
+    line-height: 25px;
+    width: calc(370px - 6rem);
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.btn-plans{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #F8F9FE;
+    background-color: #F8F9FE;
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 38vh;
+    height: 75px;
+    padding: 10px;
+    padding-left: 20px;
+}
+.btn-plans img{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+.Plan-Label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+    top: 0px;
+    right: 5rem;
+    line-height: 5px;
+}
+.Plan-Label h3{
+    font-weight: 700;
+    font-size: 13px;
+    color: hsl(223, 47%, 23%);
+}
+.Plan-Label p{
+    color: #9AA1BC;
+    font-size: 11px;
+}
+.btn-plans a{
+    position: relative;
+    top: 16px;
+    right: 8rem;
+    font-size: 12px;
+    color: hsl(245, 75%, 52%);
+}
+.btn-plans a:hover{
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.btn-payment{
+    border: 1px solid #766CF1;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: -5px 14px 5px #DEDCF9;
+}
+.btn-payment:hover{
+    background-color: #766CF1;
+}
+.btn-payment p{
+    color: #F8F9FE;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-cancel-order{
+    margin-top: 20px;
+}
+
+.btn-cancel-order a{
+    color: hsl(224, 23%, 55%);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.btn-cancel-order a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width:1440px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: contain;
+        overflow: hidden;
+    }
+}
